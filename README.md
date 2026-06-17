@@ -82,4 +82,3 @@ for c in cands:
 ## License
 
 MIT
-"
