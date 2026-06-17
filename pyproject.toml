@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music_to_bili"
+version = "0.1.0"
+description = "给定一段音频名+片段，在 Bilibili 上找到对应视频并精确定位该片段的起止时间"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "numpy",
+    "scipy",
+    "librosa",
+    "requests",
+]
+
+# 只打包 music_to_bili 这个包（排除 examples 等），
+# 装完后可直接 `import music_to_bili`
+[tool.setuptools]
+packages = ["music_to_bili"]

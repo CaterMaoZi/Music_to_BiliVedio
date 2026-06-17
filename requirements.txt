@@ -1,0 +1,5 @@
+numpy
+scipy
+librosa
+requests
+# 另需系统安装 ffmpeg（命令行可用），用于把下载到的音频转成 16kHz 单声道 WAV
